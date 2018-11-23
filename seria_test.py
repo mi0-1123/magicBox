@@ -54,18 +54,18 @@ if __name__ == '__main__':
 							pygame.mixer.music.play()
 							flg = True
 							itr = random.choice(range(num))
-				if flg and vallistint[3] > -43:
-                    Id = vallistint[0]
-                    if Id is 1:
-					    pygame.mixer.music.load('./Netafile/maa*')
-					    pygame.mixer.music.play()
-                    elif Id is 2:
-					    pygame.mixer.music.load('./Netafile/saam*')
-					    pygame.mixer.music.play()
-                    else Id is 2:
+                                if flg and vallistint[3] > -43:
+                                    Id = vallistint[0]
+                                    if Id is 1:
+					pygame.mixer.music.load('./Netafile/maa*')
+					pygame.mixer.music.play()
+                                    elif Id is 2:
+					pygame.mixer.music.load('./Netafile/saam*')
+					pygame.mixer.music.play()
+                                    else Id is 3:
 					    pygame.mixer.music.load('./Netafile/tamago*')
 					    pygame.mixer.music.play()
-					flg = False
+			        flg = False
 
 		except KeyboardInterrupt:
 			sys.exit(0)
