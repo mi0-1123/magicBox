@@ -44,7 +44,7 @@ if __name__ == '__main__':
 					tmp2 = tmp1.replace('\r','')
 					vallistint.append(int(tmp2))
 
-				print "castint",vallistint
+#				print "castint",vallistint
 
 #				if  vallistint[1] and vallistint[2]:
 				if  vallistint[2]:
@@ -55,8 +55,16 @@ if __name__ == '__main__':
 							flg = True
 							itr = random.choice(range(num))
 				if flg and vallistint[3] > -43:
-					pygame.mixer.music.load(mplist[itr])
-					pygame.mixer.music.play()
+                    Id = vallistint[0]
+                    if Id is 1:
+					    pygame.mixer.music.load('./Netafile/maa*')
+					    pygame.mixer.music.play()
+                    elif Id is 2:
+					    pygame.mixer.music.load('./Netafile/saam*')
+					    pygame.mixer.music.play()
+                    else Id is 2:
+					    pygame.mixer.music.load('./Netafile/tamago*')
+					    pygame.mixer.music.play()
 					flg = False
 
 		except KeyboardInterrupt:
