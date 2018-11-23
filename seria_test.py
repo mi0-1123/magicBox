@@ -56,7 +56,7 @@ if __name__ == '__main__':
 							itr = random.choice(range(num))
                             
 				if flg and vallistint[3] > -43:
-						pygame.mixer.music.load(mplist[num])
+						pygame.mixer.music.load(mplist[itr])
 						pygame.mixer.music.play()
 						flg = False
                 
