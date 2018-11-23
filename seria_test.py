@@ -56,6 +56,9 @@ if __name__ == '__main__':
 							itr = random.choice(range(num))
                             
 				if flg and vallistint[3] > -43:
+							th = random.choice(range(rollen))
+							pygame.mixer.music.load(rollist[th])
+							pygame.mixer.music.play()
                 	flg = False
                 
 		except KeyboardInterrupt:
