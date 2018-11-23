@@ -55,8 +55,8 @@ if __name__ == '__main__':
 							flg = True
 							itr = random.choice(range(num))
                             
-                if flg and vallistint[3] > -43:
-                			        flg = False
+				if flg and vallistint[3] > -43:
+                	flg = False
                 
 		except KeyboardInterrupt:
 			sys.exit(0)
